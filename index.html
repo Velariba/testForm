@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<title>Form</title>
+		<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<div class="step first active">
+			<div class="container">
+				<div class="row">
+					<form class="form" id="forma">
+						<ul>
+							<li class="dscr">
+								<p>Summ</p>
+								<input name="SUmm" 	type="number" class="js-validate-number" required>
+								<p class="error err_t hidden">&#8592 you need to put
+									<br> a number from
+								<br>1 to 10000</p>
+							</li>
+							<li class="dscr">
+								<p>Perid</p>
+								<input name="Period" type="number" class="js-validate-number" required>
+								<p class="error err_t hidden">&#8592 you need to put
+									<br> a number from
+								<br>1 to 12</p>
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="step second hidden">
+			<div class="container">
+				<div class="row">
+					<form class="form">
+						<ul>
+							<li>
+								<p>UNN</p>
+								<input type="text">
+							</li>
+							<li>
+								<p>Last Name</p>
+								<input type="text">
+							</li>
+							<li>
+								<p>Name</p>
+								<input type="text">
+							</li>
+							<li>
+								<p>City</p>
+								<input type="text">
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="step third hidden">
+		</div>
+		<button class="prev hidden">previous</button>
+		<button class="next">Next</button>
+		<p id="demo"></p>
+		<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+		<script src="js/scripts.js"></script>
+		<script>
+		document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+		</script>
+	</body>
+</html>

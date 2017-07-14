@@ -1,0 +1,32 @@
+.step {
+	height: 400px;
+	width: 350px;
+	background-color: #E6E6E6;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+ .step li {
+	text-align: left;
+	position: relative;
+	margin-left: 10px;
+	list-style-type: none;
+}
+.hidden {
+	display: none;
+}
+.error {
+	background-color: #df8686;
+	color: #fff;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.err_t {
+
+}
+.dscr {
+	margin: 0 0;
+	position: relative;
+	width: 100%;
+}
