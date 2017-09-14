@@ -22,11 +22,68 @@
 	margin-top: 0;
 	margin-bottom: 0;
 }
-.err_t {
-
+.error_age {
+	background-color: #67b842;
+	color: #000;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.err_t, .err_t2 {
+    position: absolute;
+    left: 175px;
+    text-align: right;
+    width: 120px;
 }
 .dscr {
 	margin: 0 0;
 	position: relative;
 	width: 100%;
+}
+.third li {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.third p {
+    margin: 9px 0;
+    text-decoration: none;
+    font-weight: normal;
+}
+.progbar {
+    width: 350px;
+    position: absolute;
+    margin: -30px 50px;
+}
+.innerpb {
+    display: inline-block;
+    margin: 0px -2px;
+    height: 30px;
+    width: 33.333333%;
+    background-color: #e6e6e6;
+    color: lightgray;
+}
+.p-b-active {
+    
+    background-color: darkslateblue;
+    
+    color: lightgoldenrodyellow;
+}
+h3 {
+	position: absolute;
+    margin: 3px 34px;
+}
+.p-b-one {
+    margin-left: 0px;
+}
+.ui-menu .ui-menu-item a,
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+	font-weight: normal;
+	margin: -1px;
+	text-align:left;
+	font-size:14px;
+	}
+.ui-autocomplete-loading {
+ background: white url("/images/ui-anim_basic_16x16.gif") right center no-repeat;
 }
