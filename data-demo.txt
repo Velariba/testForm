@@ -1,0 +1,8 @@
+{
+  "summ": 1234,
+  "period": 5,
+  "uNN": "4000000000",
+  "name": "SomeName",
+  "lastName": "SomeLastName",
+  "city": "-//-"
+}

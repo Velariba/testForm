@@ -5,23 +5,29 @@
 		<title>Form</title>
 		<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
 		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/flick/jquery-ui.css" />
 	</head>
 	<body>
+		<div class="progbar">
+			<div class="p-b-one innerpb p-b-active"><h3>step 1</h3></div>
+			<div class="p-b-two innerpb "><h3>step 2</h3></div>
+			<div class="p-b-three innerpb "><h3>step 3</h3></div>
+		</div>
 		<div class="step first active">
 			<div class="container">
 				<div class="row">
-					<form class="form" id="forma">
+					<form class="form" name="form_citydetails" enctype="multipart/form-data" method="post" id="forma" action="/action_page.php">
 						<ul>
 							<li class="dscr">
 								<p>Summ</p>
-								<input name="SUmm" 	type="number" class="js-validate-number" required>
+								<input name="SUmm" placeholder="Summ"	type="number" min="1" max="10000" class="js-validate-number" required/>
 								<p class="error err_t hidden">&#8592 you need to put
 									<br> a number from
 								<br>1 to 10000</p>
 							</li>
 							<li class="dscr">
-								<p>Perid</p>
-								<input name="Period" type="number" class="js-validate-number" required>
+								<p>Period</p>
+								<input name="Period" placeholder="Period" type="number" min="1" max="12" class="js-validate-number" required/>
 								<p class="error err_t hidden">&#8592 you need to put
 									<br> a number from
 								<br>1 to 12</p>
@@ -34,23 +40,31 @@
 		<div class="step second hidden">
 			<div class="container">
 				<div class="row">
-					<form class="form">
+					<form class="formb">
 						<ul>
 							<li>
 								<p>UNN</p>
-								<input type="text">
-							</li>
-							<li>
-								<p>Last Name</p>
-								<input type="text">
+								<input type="text" placeholder="UNN number 10 char" pattern="\d{10}" title="10 cypher number" maxlength="10" id="unn"/>
+								<p class="error err_t2 hidden">&#8592 you need to put
+								<br> your 10 char UNN</p>
 							</li>
 							<li>
 								<p>Name</p>
-								<input type="text">
+								<input type="text" placeholder="Name"/>
+								<p class="error err_t2 hidden">&#8592 you need to put
+								<br> your name here</p>
+							</li>
+							<li>
+								<p>Last Name</p>
+								<input type="text" placeholder="Last Name"/>
+								<p class="error err_t2 hidden">&#8592 you need to put
+								<br>your last name here</p>
 							</li>
 							<li>
 								<p>City</p>
-								<input type="text">
+								<input class="ff_elem" type="text" placeholder="City" name="ff_nm_from[]" id="f_elem_city"/>
+								<p class="error err_t2 hidden">&#8592 you need <br>
+								to choose a city</p>
 							</li>
 						</ul>
 					</form>
@@ -58,14 +72,45 @@
 			</div>
 		</div>
 		<div class="step third hidden">
+			<ul>
+				<li>
+					Summ
+					<p id="summ"></p>
+				</li>
+				<li>
+					Period
+					<p id="peri"></p>
+				</li>
+				<li>
+					UNN
+					<p id="unn"></p>
+				</li>
+				<li>
+					Last Name
+					<p id="last_name"></p>
+				</li>
+				<li>
+					Name
+					<p id="name"></p>
+				</li>
+				<li>
+					City
+					<p id="city"></p>
+				</li>
+			</ul>
 		</div>
 		<button class="prev hidden">previous</button>
 		<button class="next">Next</button>
+		<button class="submit hidden" type="submit" name="Submit" form="forma formb">Submit</button>
 		<p id="demo"></p>
+		
 		<script src="libs/jquery/jquery-1.11.1.min.js"></script>
 		<script src="js/scripts.js"></script>
 		<script>
 		document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
 		</script>
-	</body>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<style type="text/css">
+		</body>
 </html>
